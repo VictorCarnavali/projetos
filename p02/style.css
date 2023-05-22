@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
