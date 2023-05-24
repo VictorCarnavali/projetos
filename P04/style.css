@@ -12,9 +12,6 @@ body {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
 }
 
 main {
@@ -25,10 +22,14 @@ main {
 }
 
 main .card-top {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
     background-color: hsl(241, 81%, 54%);
     padding: 1rem;
     color: white;
-    text-align: center;
     border-radius: 0px 0px 25px 25px;
 }
 
@@ -36,3 +37,11 @@ main .card-top {
     color: rgba(255, 255, 255, 0.733);
 }
 
+main section .circle {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(212, 87, 87);
+    border-radius: 50%;
+}
