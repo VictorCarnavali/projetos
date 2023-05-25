@@ -10,10 +10,8 @@
 body {
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin: 1rem;
-    width: 88vw;
-    height: 90vh;
+    align-items: center;
+    height: 100vh;
     background-color: hsl(225, 100%, 98%);
     font-family: 'Red Hat Display', sans-serif;
 }
