@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
+    width: 90%;
+    height: 100%;
+    background-color: hsl(225, 100%, 98%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    max-width: 375px;
+    background-color: #FFF;
+    border-radius: 25px;
+    box-shadow: 0px 20px 20px hsla(245, 75%, 52%, 0.13);
+}
+
+main #illustration {
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+section {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+main section .description {
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.6em;
+    padding: 1.2rem;
+}
+
+main section .card-price {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+}
+
+main section #price {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 10px;
+}
+
+main section #price strong {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+main section #price span {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+main section div a {
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+main section .payment {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: 0px 15px 10px hsla(245, 75%, 52%, 0.123);
+    cursor: pointer;
+}
+
+main section .cancel {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    color: hsla(223, 47%, 23%, 0.473);
+    font-weight: 900;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+
