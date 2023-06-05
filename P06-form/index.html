@@ -26,6 +26,8 @@
     </header>
 
     <div class="wrapper">
+        <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+
         <div class="form-box login">
             <h2>Login</h2>
             <form action="#">
@@ -49,7 +51,36 @@
                 </div>
             </form>
         </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" name="text" id="text" required>
+                    <label for="text">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" name="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label for="remember-me"><input type="checkbox" name="agree" id="agree">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
