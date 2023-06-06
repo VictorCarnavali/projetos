@@ -1,0 +1,51 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: #161616f6;
+}
+
+.logo img{
+    width: 150px;
+    cursor: pointer;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.5em;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-left: 40px;
+    transition: .4s ease;
+}
+
+.navigation a:hover {
+    color: #ffa500;
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #FFF;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #FFF;
+    color: #162938;
+}

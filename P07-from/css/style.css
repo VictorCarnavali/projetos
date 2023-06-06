@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'AncientFont';
+    src: url(../fonts/Ancient\ Medium.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RomanAlt';
+    src: url(../fonts/MorrisRomanBlackAlt.otf) format(opentype), url(../fonts/MorrisRomanBlackAlt.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RomanBlack';
+    src: url(../fonts/MorrisRomanBlack.otf) format(opentype), url(../fonts/MorrisRomanBlack.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RomanAlt';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+}
+
+
