@@ -21,7 +21,7 @@ function meuEscopo() {
 
         console.log(pessoas);
 
-        register.innerHTML += `<p><strong>Nome:</strong> ${nome.value}<br><strong>Sobrenome:</strong> ${sobrenome.value}<br><strong>Peso:</strong> ${peso.value}<br><strong>Altura:</strong> ${altura.value}</p>`;
+        register.innerHTML += `<p><strong>Nome:</strong> ${nome.value}<br><strong>Sobrenome:</strong> ${sobrenome.value}<br><strong>Peso:</strong> ${peso.value}<br><strong>Altura:</strong> ${altura.value}</p><br>`;
     }
 
     form.addEventListener('submit', recebeEventoClicar);
