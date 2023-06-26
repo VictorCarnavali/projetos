@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: Roboto, sans-serif;
+    outline: none;
 }
 
 body {
@@ -17,11 +18,69 @@ body {
     margin: 100px auto 0;
 }
 
+.input-task {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 1em;
+}
+
+.button-add-task {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #003329;
+    color: #FFF;
+    font-size: 1.2em;
+    padding: 0 15px;
+    cursor: pointer;
+    float: right;
+    font-weight: 700;
+}
+
+.button-add-task:hover {
+    opacity: 0.8;
+}
+
+.button-add-task:active {
+    opacity: 0.6;
+}
+
+.list-task {
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.task {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.task:hover i{
+    opacity: 1;
+}
+
 i {
     font-size: 25px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
-ul li{
-    list-style-type: none;
+.fa-circle-check {
+    color: rgb(83, 177, 83);
 }
 
+.fa-trash {
+    color: rgb(255, 94, 94);
+}
