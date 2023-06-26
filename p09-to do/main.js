@@ -5,8 +5,12 @@ let myList = [];
 
 function addNewTask(){
     myList.push(input.value);
+    
+    showTasks()
+}
 
-    console.log(myList);
+function showTasks(){
+
 }
 
 button.addEventListener('click', addNewTask);
