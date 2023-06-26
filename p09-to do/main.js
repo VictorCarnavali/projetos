@@ -1,16 +1,47 @@
 const button = document.querySelector('.button-add-task');
 const input = document.querySelector('.input-task');
+const listTask = document.querySelector('.list-task');
 
 let myList = [];
 
 function addNewTask(){
-    myList.push(input.value);
+    myList.push({
+        task: input.value,
+        completed: false
+    });
+
+    input.value = '';
 
     showTasks()
-}
+};
 
 function showTasks(){
-     let newLi = ;
-}
+     let newLi = '';
+
+     myList.forEach((item, position) => {
+        newLi += 
+        `
+            <li class="task">
+                <i class="fa-solid fa-circle-check" onclick = "checked(${position})"></i>
+                <p>${item.task}</p>
+                <i class="fa-solid fa-trash" onclick = "deleteItem(${position})"></i>
+            </li>
+        `;
+     });
+
+     listTask.innerHTML = newLi;
+};
+
+function deleteItem(position){
+    myList.splice(position, 1);
+
+    showTasks()
+};
+
+function checked(position){
+    
+
+    showTasks()
+};
 
 button.addEventListener('click', addNewTask);
