@@ -40,6 +40,8 @@ function deleteItem(position){
 
 function checked(position){
     myList[position].completed = !myList[position].completed 
+
+    showTasks()
 };
 
 button.addEventListener('click', addNewTask);
