@@ -84,3 +84,8 @@ i {
 .fa-trash {
     color: rgb(255, 94, 94);
 }
+
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}

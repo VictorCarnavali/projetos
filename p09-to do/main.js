@@ -21,7 +21,7 @@ function showTasks(){
      myList.forEach((item, position) => {
         newLi += 
         `
-            <li class="task">
+            <li class="task ${item.completed && "done"}">
                 <i class="fa-solid fa-circle-check" onclick = "checked(${position})"></i>
                 <p>${item.task}</p>
                 <i class="fa-solid fa-trash" onclick = "deleteItem(${position})"></i>
@@ -39,9 +39,7 @@ function deleteItem(position){
 };
 
 function checked(position){
-    
-
-    showTasks()
+    myList[position].completed = !myList[position].completed 
 };
 
 button.addEventListener('click', addNewTask);
